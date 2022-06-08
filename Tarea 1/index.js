@@ -30,9 +30,13 @@ function test(states){
     var rand = Math.floor(Math.random() * 101);
     console.log("Random: " + rand);
 
-    if (rand >= 79 && rand < 86) {states[1] = "DIRTY"; console.log("Ensuciar A");}// Ensuciar A
-    else if (rand >= 86 && rand < 93) {states[2] = "DIRTY"; console.log("Ensuciar B");}// Ensuaciar B        
-    else if (rand >= 93) { // Ensuciar Ambos
+    if (rand >= 79 && rand < 86) { // Ensuciar A
+        states[1] = "DIRTY";
+        console.log("Ensuciar A");
+    } else if (rand >= 86 && rand < 93) { // Ensuaciar B        
+        states[2] = "DIRTY"; 
+        console.log("Ensuciar B");
+    } else if (rand >= 93) { // Ensuciar Ambos
         states[1] = "DIRTY";
         states[2] = "DIRTY";
         console.log("Ensuciar Ambos");
